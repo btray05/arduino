@@ -1,0 +1,11 @@
+void setup() {
+  pinMode (13, OUTPUT);//On définit le pin
+
+}
+
+void loop() {
+  digitalWrite (13, HIGH); //on envoie un courant HIGH
+  delay(500); // delai 0.5 s
+  digitalWrite (13, LOW); // on eteint la led
+  delay(500); // delai 0.5 s
+}
