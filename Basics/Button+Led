@@ -1,0 +1,28 @@
+//Pin 3 : Entrée pour lire le bouton
+// Pin 2 : Sortie pour controler la DEL
+int BoutonValue = 0 ;
+
+int Bouton = 3 ;
+int LED = 2 ;
+
+
+void setup() {
+  pinMode(Bouton, INPUT) ;
+  pinMode(LED, OUTPUT) ;
+
+}
+
+void loop() {
+ BoutonValue = digitalRead(Bouton) ;
+
+  if (BoutonValue != 0){
+      digitalWrite (LED, HIGH) ;
+      Serial.println("LED ON +++++++");
+    
+  }
+  else {
+
+       digitalWrite (LED, LOW) ;
+       Serial.println("LED OFF -------"); 
+  }
+}
